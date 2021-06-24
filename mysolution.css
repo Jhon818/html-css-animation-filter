@@ -193,7 +193,7 @@
     animation-name: move1 ;
     animation-timing-function:linear;
     animation-iteration-count: 1;
-    animation-duration: 20s;
+    animation-duration: 3s;
     animation-direction:alternate-reverse;
 }
 
@@ -238,7 +238,7 @@
     animation-name: move2 ;
     animation-timing-function:linear;
     animation-iteration-count: 1;
-    animation-duration: 10s;
+    animation-duration: 3s;
     animation-direction:alternate-reverse;
 }
 
