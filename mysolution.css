@@ -114,12 +114,6 @@
     }
 }
 /* Esercizio12 */
-/* .ex-12-button:hover {
-    animation-name: spin1 ;
-} */
-
-
-
 .ex-12-button:hover .ex-12-bottom-white {
     animation-name: spin2 ;
     animation-timing-function:linear;
@@ -195,16 +189,91 @@
 
 
  /* esercizio13 */
- .ex-13-bottom-white, .ex-13-bottom-white{
-     animation-name: rotate;
- }
+ .ex-13-button:hover .ex-13-bottom-white {
+    animation-name: move1 ;
+    animation-timing-function:linear;
+    animation-iteration-count: 1;
+    animation-duration: 20s;
+    animation-direction:alternate-reverse;
+}
 
- @keyframes rotate {
-     0%{
-         left: 50px;
+
+@keyframes move1 {
+        
+
+    0% { bottom: -10px;
+        right: 10%;
+        
+     } 25%{bottom: 0%;
+
+         right:calc(100% -200px);
      }
 
- }
+    50% { bottom: 0% ;
+        right: 40%;
+
+     }
+
+     75% { bottom:-10px ;
+        right: 50% ;
+
+     }
+     90% {
+        bottom: -10px;
+        right: 0%
+
+     }
+
+    100% {
+        bottom: 20px;
+        right: -20%
+
+     }
+
+     }
+
+   
+
+ .ex-13-button:hover  .ex-13-top-white{
+    animation-name: move2 ;
+    animation-timing-function:linear;
+    animation-iteration-count: 1;
+    animation-duration: 10s;
+    animation-direction:alternate-reverse;
+}
+
+
+@keyframes move2 {
+    0% { top: 30%;
+        left: -20px;
+        
+     } 25%{
+        top: 5%;
+         left: -20%;
+     }
+
+    50% {
+        top: 0%; 
+        left: -10%;
+
+     }
+
+     75% { 
+        top: -10px;
+        left: 0% ;
+
+     }
+     90% {
+        top: -10px;
+        left: 70%
+
+     }
+     100% {top: 20px;
+        left:180px;
+
+     }
+
+     }
 
 
 
