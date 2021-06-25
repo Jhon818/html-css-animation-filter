@@ -153,7 +153,7 @@
     animation-name: spin3 ;
     animation-timing-function:linear;
     animation-iteration-count: 1;
-    animation-duration: 1s;
+    animation-duration: 4s;
     animation-direction:alternate-reverse;
 }
 
@@ -172,11 +172,11 @@
      }
 
      75% { 
-        left: 60% ;
+        left:70% ;
 
      }
      90% {
-        left: 70%
+        left: 0%
 
      }
 
@@ -202,35 +202,40 @@
         
 
     0% { bottom: -10px;
-        left: 30%;
+        right: 20%;
         
-     } 25%{  bottom:-10px;
-         left:calc(100% -200px);
+     } 20%{  bottom:-10px;
+         right:calc(0% - 30px);
      }
 
-    50% { bottom:-10px ;
-        left: 50%;
-
+     40%{
+         bottom: calc(100% - 10px);
+         right:calc(0% - 30px);
      }
 
-     75% { bottom:-10px ;
-        left: 70% ;
+     60%{
+        bottom: calc(100% - 10px);
+        right:calc(100% - 30px);
+    }
 
-     }
-     90% {
+    80%{
         bottom: -10px;
-        left: 90%
-       
+        right:calc(100% - 60px);
+    }
 
+    100%{
+        bottom: -10px;
+        right:20%;
+    }
+
+
+     
+
+  
+  
      }
 
-    100% {
-        bottom: 10px;
-        left: 100%
-
-     }
-
-     }
+     
 
    
 
@@ -244,36 +249,54 @@
 
 
 @keyframes move2 {
-    0% { top: -10px;
-        left: 20%;
+    0% { top: -10%;
+        left: 50%;
         
      } 
      25%{
-        top: -10px;
-        left: 5%;
+        top: -10%;
+        left: 20%;
      }
 
     40% {
-        top: -10px; 
-        left: 10%;
+        top: -10%; 
+        left: -10%;
 
      }
 
      60% { 
-        top: -10px;
-        left: 0% ;
+        top: 30%;
+        left:calc(0% - 30px) ;
 
      }
-     90% {
-        top: -10px;
-        left: -80%
+     70% {
+        top: 40%;
+        left: -10%
 
      }
-     100% {
-         top: -10px;
-        left:90%;
+     75% {
+         top:50%;
+        left:-10%;
 
      }
+    
+    80% {
+        top: calc(100% - 10px);
+        left: calc(0% - 30px);
+
+    }
+
+    90% {
+        top: calc(100% - 10px);
+       left: 10%;
+
+    }
+
+    100% {
+        top:  calc(100% - 10px);
+        left: 60%;
+
+    }
 
      }
 
