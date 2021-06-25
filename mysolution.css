@@ -153,7 +153,7 @@
     animation-name: spin3 ;
     animation-timing-function:linear;
     animation-iteration-count: 1;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-direction:alternate-reverse;
 }
 
@@ -194,7 +194,7 @@
     animation-timing-function:linear;
     animation-iteration-count: 1;
     animation-duration: 3s;
-    animation-direction:alternate-reverse;
+    animation-direction:normal;
 }
 
 
@@ -202,31 +202,31 @@
         
 
     0% { bottom: -10px;
-        right: 10%;
+        left: 30%;
         
-     } 25%{bottom: 0%;
-
-         right:calc(100% -200px);
+     } 25%{  bottom:-10px;
+         left:calc(100% -200px);
      }
 
-    50% { bottom: 0% ;
-        right: 40%;
+    50% { bottom:-10px ;
+        left: 50%;
 
      }
 
      75% { bottom:-10px ;
-        right: 50% ;
+        left: 70% ;
 
      }
      90% {
         bottom: -10px;
-        right: 0%
+        left: 90%
+       
 
      }
 
     100% {
-        bottom: 20px;
-        right: -20%
+        bottom: 10px;
+        left: 100%
 
      }
 
@@ -239,37 +239,39 @@
     animation-timing-function:linear;
     animation-iteration-count: 1;
     animation-duration: 3s;
-    animation-direction:alternate-reverse;
+    animation-direction:normal;
 }
 
 
 @keyframes move2 {
-    0% { top: 30%;
-        left: -20px;
+    0% { top: -10px;
+        left: 20%;
         
-     } 25%{
-        top: 5%;
-         left: -20%;
+     } 
+     25%{
+        top: -10px;
+        left: 5%;
      }
 
-    50% {
-        top: 0%; 
-        left: -10%;
+    40% {
+        top: -10px; 
+        left: 10%;
 
      }
 
-     75% { 
+     60% { 
         top: -10px;
         left: 0% ;
 
      }
      90% {
         top: -10px;
-        left: 70%
+        left: -80%
 
      }
-     100% {top: 20px;
-        left:180px;
+     100% {
+         top: -10px;
+        left:90%;
 
      }
 
